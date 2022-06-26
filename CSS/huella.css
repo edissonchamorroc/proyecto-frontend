@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+.scan{
+  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan .dedo{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background-color: transparent;
+    background: url(../imagenes/fingerPrint_01.png);
+    background-size: 300px;
+}
+.scan .dedo::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../imagenes/fingerPrint_02.png);
+    background-size: 300px;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%
+    {
+        height: 0%;
+    }
+    50%
+    {
+        height: 100%;
+    }
+}
+.scan .dedo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #3fefef;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_line 4s ease-in-out infinite;
+
+}
+@keyframes animate_line{
+    0%,100%
+    {
+        top: 0%;
+    }
+    50%
+    {
+        top: 100%;
+    }
+}
+.scan h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #3fefef;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_text 5s infinite;
+}
+@keyframes animate_text{
+    0%,100%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+}
+.cont-btn{
+    width: 300px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+   
+}
+.cont-btn .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+
+}
+.cont-btn .btn a{
+    position: relative;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px solid rgba(255,255, 255, 0.2);
+    border-top: 1px solid rgba(255,255, 255, 0.1);
+    border-bottom: 1px solid rgba(255,255, 255, 0.1);;
+    border-radius: 30px;
+    color:#3fefef;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.cont-btn .btn:hover a{
+    letter-spacing: 3px;
+    color: #111;
+}
+.cont-btn .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    width: 30px;
+    height: 10px;
+    background: #3fefef;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.cont-btn .btn:hover::before{
+    
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.1s;
+
+}
+
+.cont-btn .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3px;
+    width: 30px;
+    height: 10px;
+    background: #3fefef;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.cont-btn .btn:hover::after{
+    
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.1s;
+
+}

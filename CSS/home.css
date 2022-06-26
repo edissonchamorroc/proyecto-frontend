@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+    background:#21b1b1;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    height: 15%;
+    background: #070835;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-links{
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+.contet-name_logo{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.contet-name_logo .name{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contet-name_logo .name h2{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 25px;
+}
+.contet-name_logo .logo{
+    position: relative;
+    width: 32px;
+    height: 30px;
+    background: url(../imagenes/huellaLogo1.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    overflow:hidden;
+    transition: 0.5s;
+}
+.contet-name_logo .logo:hover{
+    background: transparent;
+}
+.contet-name_logo .logo:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../imagenes/huellaLogo2.png);
+    background-size: 30px;
+}
+.links{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links .contet-link{
+    width: 33%;
+    position: relative;
+    margin: 10px;
+}
+.links .contet-link a{ 
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    font-weight: 400;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+
+}
+
+.links .contet-link:hover a{
+    letter-spacing: 2px;
+    color: #3fefef;
+}
+.links .contet-link::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 30px;
+    height: 10px;
+    background: #3fefef;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.links .contet-link:hover::before{
+    height: 50%;
+    width: 90%;
+    border-radius: 30px;
+    transition-delay: 0.1s;
+}
+
+.info{
+    
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .picture{
+    position: relative;
+    width: 15%;
+    height: 40%;
+    margin: 70px;
+    background-color: #101346;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.picture .photo{
+   
+    width: 150px;
+    height: 200px;
+    background: url(../imagenes/yo.png);
+    background-size: 150px;
+    border-radius: 50%;
+  
+}
+.info .profession h1{
+    font-size: 40px;
+    font-weight:bold;
+    
+    
+}
+.info .description{
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}

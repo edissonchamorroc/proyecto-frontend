@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    width:100%;
+    display:block;
+    font-family: sans-serif, Arial, Helvetica;
+    color: rgb(107, 102, 102);  
+  }
+  .content-head {
+    margin: 0 30px ;
+    display: flex;
+    flex-direction: column;
+  }
+  #title {
+    margin-top: 10px 0;
+    text-align: center;
+  }
+  #description {
+      display: block;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: justify;    
+  }
+  hr {
+    width: 90%;
+    border: 1px solid rgba(170, 95, 245, 0.945);
+  }
+  #main-content{    
+      width:90%;
+      height:100%;
+      margin:5% auto;
+      background-color: rgba(173, 231, 173, 0.2);
+      border-radius: 20px;
+  }
+.form-group{
+    padding: 0 20px;
+}
+.grupo-entrada{
+    margin:0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.entrada-izq,.entrada-der{
+    width: 50%;
+    padding-right:10px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+}
+h4{
+   text-align: center;
+}
+.contenedor-dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-radio{
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.autorizacion{
+    padding: 0 10px 10px 20px;
+    text-align: left;
+}
+.comentarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 30px;
+}
+textarea {
+    width: 90%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.entrada{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#dropdown{
+    width: 20%;
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#submit{
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid rgb(99, 97, 97);
+    font-size: 0.9rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#submit:hover{
+    font-style:italic;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,58 @@
+body{
+    background-color:  rgb(73, 73, 73);
+}
+#main {
+    margin: 10px 3px;
+    border-radius: 10px;
+    background-color:black;
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    color: aliceblue;
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+   
+}
+#name-title{
+    font-style: italic;
+}
+#img-div{
+    display:block;
+}
+#image{
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#table-items-life{
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+#reference{
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+@media (max-width: 700px) {
+    #tribute-info{
+        padding-right:10%;
+        padding-left:10%;
+    }
+}
